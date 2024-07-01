@@ -1,7 +1,4 @@
 <?php
-session_start();
-if($_SESSION["auth"]) header("Location: http://localhost:8000/dashboard");
-
 include './views/layouts/header.php';
 ?>
 

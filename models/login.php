@@ -3,7 +3,9 @@
 require dirname(__DIR__)."/config/conn.php";
 session_start();
 
-$goBack = 'http://'. $_SERVER['HTTP_HOST']. '/dashboard';
+$goBack = 'http://'. $_SERVER['HTTP_HOST'] .'/dashboard';
+
+
 
 if (isset($_POST['login'])) {
   $email = $_POST['email'];

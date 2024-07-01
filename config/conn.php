@@ -5,6 +5,11 @@ $serverUser = "root";
 $dbPassword = "";
 $dbName = "company";
 
-$conn = new mysqli($serverName, $serverUser, $dbPassword, $dbName);
+try {
+    //code...
+    $conn = new mysqli($serverName, $serverUser, $dbPassword, $dbName);
+} catch (\Throwable $th) {
+    throw $th;
+}
 
-if (!$conn) die("Error connecting to database..");
+// if (!$conn) die("Error connecting to database..");

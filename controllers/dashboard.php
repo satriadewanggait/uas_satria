@@ -1,7 +1,5 @@
 <?php
 
-class Dashboard {
-    function lala() {
-        echo 'sdadsas';
-    }
+$DasboardView = function () {
+    require './views/dashboard/index.php';
 };
